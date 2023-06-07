@@ -34,7 +34,7 @@ export default function Home() {
             Start finding the perfect gifts for your loved ones!
           </p>
 
-          <Link href="/home">
+          <Link href="/start">
             <button className={styles.button}>Start</button>
           </Link>
         </main>
