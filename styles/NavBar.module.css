@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  padding: 10px;
+  color: #ffffff; /* Set the text color to white */
+}
+
+.title {
+  margin: 0;
+}
+
+.titleBox {
+  background-color: var(--accent-color); /* Use the accent color variable */
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 5px;
+  font-style: italic; /* Make the text italic */
+  font-weight: bold; /* Make the text bold */
+}
+
+.menu {
+  display: flex;
+  color: var(--accent-color); /* Use the accent color variable */
+}
+
+.menuItem {
+  margin-right: 10px;
+}
+
+.username {
+  margin-left: 10px;
+  color: var(--accent-color); /* Use the accent color variable */
+}

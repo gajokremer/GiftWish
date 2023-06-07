@@ -35,7 +35,7 @@ export default function Home() {
           </p>
 
           <Link href="/home">
-            <button className={styles.button}>Click Me</button>
+            <button className={styles.button}>Start</button>
           </Link>
         </main>
 
