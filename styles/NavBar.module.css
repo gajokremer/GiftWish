@@ -4,7 +4,9 @@
   justify-content: space-between;
   background-color: whitesmoke;
   padding: 10px;
+  margin: 20px;
   color: #ffffff; /* Set the text color to white */
+  border-radius: 20px;
 }
 
 .title {
@@ -15,7 +17,7 @@
   background-color: var(--accent-color); /* Use the accent color variable */
   padding: 5px 10px;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 10px;
   font-style: italic; /* Make the text italic */
   font-weight: bold; /* Make the text bold */
 }
@@ -26,10 +28,22 @@
 }
 
 .menuItem {
-  margin-right: 10px;
+  margin-right: 20px;
+  font-size: 18px; /* Increase the font size of menu items */
 }
 
 .username {
+  display: flex;
+  align-items: center;
   margin-left: 10px;
   color: var(--accent-color); /* Use the accent color variable */
+  font-size: 18px; /* Increase the font size of the username */
+}
+
+.avatar {
+  width: 80px; /* Increase the width of the avatar image */
+  height: 80px; /* Increase the height of the avatar image */
+  margin-left: 10px; /* Add margin between the avatar and the username */
+  border-radius: 50%; /* Make the image round */
+  border: 2px solid var(--accent-color); /* Add a border with the accent color */
 }
