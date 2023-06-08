@@ -1,9 +1,18 @@
+import { data } from "autoprefixer";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styles from "../styles/NavBar.module.css";
 
-const NavBar = () => {
+const NavBar = (data) => {
+  console.log("NavBar");
+  // console.log(user);
+
+  const { data: user } = data;
+  console.log(user)
+
+  const encodedUser = encodeURIComponent(JSON.stringify(user));
+
   return (
     <div className={styles.navbarBackground}>
       <div className={styles.navbar}>
@@ -20,7 +29,8 @@ const NavBar = () => {
           </Link>
         </div>
         <div className={styles.username}>
-          <Link href={"/profile"}>
+          {/* <Link href={`/profile?user=${encodedUser}`}> */}
+          <Link href={{ pathname: "/profile", query: { user: encodedUser } }}>
             <span>Username</span>
           </Link>
           <Image

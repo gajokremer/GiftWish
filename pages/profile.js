@@ -1,10 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { stringify } from "postcss";
 import React from "react";
 import NavBar from "../components/NavBar";
 import styles from "../styles/Profile.module.css";
 
 export default function Profile() {
+  const router = useRouter();
+  const { user: encodedUser } = router.query;
+
+  const user = encodedUser ? JSON.parse(decodeURIComponent(encodedUser)) : null;
+
+  console.log(user);
+
   return (
     <>
       <div className={styles.background}>
@@ -26,20 +35,19 @@ export default function Profile() {
               />
             </div>
             <div className={styles.userInfo}>
-              <h1 className={styles.userProfileName}>Nombre del Usuario</h1>
+              <h1 className={styles.userProfileName}>{user.username}</h1>
               <div className={styles.userProfileInfo}>
-                <p>Información básica del usuario</p>
-                <h2 className={styles.userProfileTitle}>
-                  Detalles del Usuario
-                </h2>
-                <p className={styles.userProfileDetail}>
-                  Correo electrónico: usuario@example.com
-                </p>
-                <p className={styles.userProfileDetail}>
-                  Fecha de nacimiento: 1 de enero de 1990
-                </p>
-                {/* Agrega más detalles del usuario aquí */}
+                <p>Full Name: {`${user.fullName}`}</p>
+                <p>Age: {user.age}</p>
+                <p>Birth {user.birthDate}</p>
               </div>
+              <h1 className={styles.userProfileTitle}>User details</h1>
+              <div className={styles.userProfileInfo}>
+                <p>Email: {user.email}</p>
+                <p>Company: {user.company}</p>
+                <p>Role: {user.role}</p>
+              </div>
+              {/* Agrega más detalles del usuario aquí */}
             </div>
           </div>
         </div>
