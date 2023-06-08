@@ -150,31 +150,17 @@
   color: #666666;
 }
 
-/* .button {
-  margin-top: 2rem;
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-  background-color: #ba03fc;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #8b00cc;
-} */
-
 .button {
   margin-top: 2rem;
   padding: 1rem 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   background-color: var(--accent-color);
   opacity: 1;
   color: white;
   border: none;
-  border-radius: 20px;
+  border-radius: 1.5rem;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .button:hover {

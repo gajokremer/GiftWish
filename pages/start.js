@@ -6,7 +6,9 @@ export default function Start() {
   return (
     <div className={styles.background}>
       <NavBar></NavBar>
-      <h1>Start</h1>
+      <div className={styles.start}>
+        <h1>Start</h1>
+      </div>
     </div>
   );
 }

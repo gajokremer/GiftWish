@@ -7,3 +7,16 @@
   background-color: #ececec;
   color: var(--accent-color);
 }
+
+.start {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  padding: 10px;
+  /* color: #ffffff; Set the text color to white */
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+  margin: 20px;
+}

@@ -1,0 +1,73 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ececec;
+  color: var(--accent-color);
+}
+
+.profile {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  padding: 10px;
+  /* color: #ffffff; Set the text color to white */
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+  margin: 20px;
+}
+
+.button {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: var(--accent-color);
+  opacity: 1;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: var(--accent-color);
+  opacity: 0.8;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+}
+
+.userProfileImage {
+  width: 200px; /* Increase the width of the profile picture */
+  height: 200px; /* Increase the height of the profile picture */
+  margin-right: 20px; /* Add margin to the right of the picture */
+  border-radius: 50%; /* Make the picture round */
+}
+
+.userProfileName {
+  font-size: 24px; /* Increase the font size of the username */
+  font-weight: bold; /* Make the username bold */
+}
+
+.userProfileInfo {
+  font-size: 16px; /* Decrease the font size of the basic information */
+}
+
+.userProfileTitle {
+  font-size: 20px; /* Decrease the font size of the "Detalles del Usuario" title */
+  font-weight: bold; /* Make the title bold */
+  margin-top: 10px; /* Add some margin at the top */
+}
+
+.userProfileDetail {
+  font-size: 16px; /* Decrease the font size of the user details */
+  margin-bottom: 5px; /* Add some margin at the bottom */
+}

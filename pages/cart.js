@@ -6,7 +6,9 @@ export default function Cart() {
   return (
     <div className={styles.background}>
       <NavBar></NavBar>
-      <h1>Cart</h1>
+      <div className={styles.cart}>
+        <h1>Cart</h1>
+      </div>
     </div>
   );
 }

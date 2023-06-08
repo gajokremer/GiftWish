@@ -20,7 +20,9 @@ const NavBar = () => {
           </Link>
         </div>
         <div className={styles.username}>
-          <span>Username</span>
+          <Link href={"/profile"}>
+            <span>Username</span>
+          </Link>
           <Image
             src="/images/profilePicture.jpeg"
             alt="User Avatar"
