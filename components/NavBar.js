@@ -1,4 +1,4 @@
-import { data } from "autoprefixer";
+// import { data } from "autoprefixer";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -9,7 +9,7 @@ const NavBar = (data) => {
   // console.log(user);
 
   const { data: user } = data;
-  console.log(user)
+  console.log(user);
 
   const encodedUser = encodeURIComponent(JSON.stringify(user));
 
@@ -21,12 +21,20 @@ const NavBar = (data) => {
             <h1 className={styles.title}>GiftWish</h1>
           </Link>
         </div>
+        <div className={styles.cartContainer}>
+          <Link href={"/cart"}>
+            <Image
+              src="/images/cart.png"
+              alt="Cart"
+              className={styles.cart}
+              width={80} // Increase the width of the image
+              height={80} // Increase the height of the image
+            />
+          </Link>
+        </div>
         <div className={styles.menu}>
           <div className={styles.menuItem}>Catalog</div>
           <div className={styles.menuItem}>Wishlist</div>
-          <Link href={"/cart"}>
-            <div className={styles.menuItem}>Cart</div>
-          </Link>
         </div>
         <div className={styles.username}>
           {/* <Link href={`/profile?user=${encodedUser}`}> */}

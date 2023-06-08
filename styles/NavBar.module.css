@@ -1,6 +1,6 @@
 .navbarBackground {
   /* background-color: var(--accent-color); */
-  background-color: #ECECEC;
+  background-color: #ececec;
   padding: 20px;
 }
 
@@ -31,6 +31,8 @@
 .menu {
   display: flex;
   color: var(--accent-color); /* Use the accent color variable */
+  align-items: center; /* Centramos verticalmente los elementos dentro del contenedor */
+  margin-right: auto; /* Mueve el contenedor al lado izquierdo */
 }
 
 .menuItem {
@@ -53,4 +55,16 @@
   margin-left: 10px; /* Add margin between the avatar and the username */
   border-radius: 50%; /* Make the image round */
   border: 2px solid var(--accent-color); /* Add a border with the accent color */
+}
+
+.cart {
+  width: 50px; /* Increase the width of the avatar image */
+  height: 50px; /* Increase the height of the avatar image */
+  margin-left: 25px; /* Nueva propiedad para agregar un margen izquierdo */
+}
+
+.cartContainer {
+  display: flex; /* Agregamos esta propiedad para que el contenedor se comporte como flex */
+  align-items: center; /* Centramos verticalmente los elementos dentro del contenedor */
+  margin-right: auto; /* Mueve el contenedor al lado izquierdo */
 }
