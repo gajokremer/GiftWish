@@ -1,7 +1,7 @@
+import Link from "next/link";
 import React from "react";
 import NavBar from "../components/NavBar";
 import styles from "../styles/Cart.module.css";
-import Link from "next/link";
 
 export default function Cart() {
   return (
@@ -12,20 +12,26 @@ export default function Cart() {
         <div className={styles.leftSection}>
           <h1>Regalos Recomendados</h1>
           <div className="photo-cascade">
-            <img
-              // src="https://previews.123rf.com/images/beo88/beo881711/beo88171100002/89436401-ropa-femenina-de-oto%C3%B1o-su%C3%A9ter-rosa-jeans-bolso-de-cuero-bufanda-estampada-accesorios-y.jpg"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJfwhgzbnkSYLyRWTVsKfLHPanbAS85JQ-ag&usqp=CAU"
-              alt="Imagen 1"
-            />
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJfwhgzbnkSYLyRWTVsKfLHPanbAS85JQ-ag&usqp=CAU"
-              // src="https://static-cse.canva.com/blob/984345/05Secretosfotosdeproducto.jpg"
-              alt="Imagen 2"
-            />
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJfwhgzbnkSYLyRWTVsKfLHPanbAS85JQ-ag&usqp=CAU"
-              alt="Imagen 3"
-            />
+            <div>
+              <img
+                // src="https://previews.123rf.com/images/beo88/beo881711/beo88171100002/89436401-ropa-femenina-de-oto%C3%B1o-su%C3%A9ter-rosa-jeans-bolso-de-cuero-bufanda-estampada-accesorios-y.jpg"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJfwhgzbnkSYLyRWTVsKfLHPanbAS85JQ-ag&usqp=CAU"
+                alt="Imagen 1"
+              />
+            </div>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJfwhgzbnkSYLyRWTVsKfLHPanbAS85JQ-ag&usqp=CAU"
+                // src="https://static-cse.canva.com/blob/984345/05Secretosfotosdeproducto.jpg"
+                alt="Imagen 2"
+              />
+            </div>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJfwhgzbnkSYLyRWTVsKfLHPanbAS85JQ-ag&usqp=CAU"
+                alt="Imagen 3"
+              />
+            </div>
           </div>
         </div>
 

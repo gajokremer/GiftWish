@@ -1,5 +1,5 @@
 .background {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -22,12 +22,12 @@
 }
 
 .leftSection {
-  width: 35%;
-  height: 256;
+  width: auto;
+  height: auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin: 20px auto; /* Agregado: margin auto */
   border-radius: 20px;
-  padding: 10px;
+  padding: 20px;
   margin-right: 9%;
 }
 
@@ -132,6 +132,9 @@
   column-count: 3; /* Número de columnas */
   column-gap: 10px; /* Espacio entre columnas */
   overflow: hidden; /* Ocultar contenido que exceda las dimensiones */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
 }
 
 .photo-cascade img {
