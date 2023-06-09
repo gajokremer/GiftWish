@@ -15,7 +15,8 @@ export default function Start() {
 
   return (
     <div className={styles.background}>
-      <NavBar data={user}></NavBar>
+      {/* <NavBar data={user}></NavBar> */}
+      <NavBar></NavBar>
       <div className={styles.start}>
         <h1>Start</h1>
       </div>
