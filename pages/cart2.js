@@ -1,9 +1,8 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import styles from "../styles/Cart.module.css";
-import Link from "next/link";
 
-export default function Cart() {
+export default function Cart2() {
   return (
     <div className={styles.background}>
       <NavBar></NavBar>
@@ -32,20 +31,6 @@ export default function Cart() {
         {/* Carrito de compras */}
         <div className={styles.rightSection} id={styles.cart}>
           <h1>Carrito de Compras</h1>
-          <div className={styles.cartItem}>
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHkS1q8sBIuNYM_3dGtETztbjnLAmQ0prkrC-nIcPCrkpdbKRo4RDGgJpA7VEHOqU2LY&usqp=CAU"
-              alt="Producto 1"
-            />
-            <div className={styles.itemDetails}>
-              <h2>Producto 1</h2>
-              <p>Precio: $200</p>
-              <Link href={"/cart2"}>
-                <button className={styles.removeButton}>Eliminar</button>
-              </Link>
-            </div>
-            <button className={styles.addButton}>+</button>
-          </div>
 
           <div className={styles.cartItem}>
             <img
@@ -74,7 +59,7 @@ export default function Cart() {
           </div>
 
           <div className={styles.total}>
-            <h3>Total: $430</h3>
+            <h3>Total: $230</h3>
             <button className={styles.checkoutButton}>Finalizar Compra</button>
           </div>
         </div>
